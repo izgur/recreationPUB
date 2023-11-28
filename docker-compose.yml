@@ -1,0 +1,23 @@
+version: "3.5"
+services:
+  sports-node-api:
+    container_name: sports-app
+    ports:
+      - "3000:3000"
+    image: sports-server
+    build: ./
+    environment:
+      - NODE_ENV=test
+    networks:
+      - sports-network
+  sports-mongo-db:
+    image: mongo
+    container_name: sports-mongo-db
+    ports:
+      - "27017-27019:27017-27019"
+    networks:
+      - sports-network
+networks:
+  sports-network:
+    name: sports-network
+    driver: bridge

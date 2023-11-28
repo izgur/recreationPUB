@@ -1,0 +1,120 @@
+      <div class="row">
+        <!-- toogle geolocation-->
+        <div class="col-12">
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input show-pointer"
+                type="checkbox"
+                role="switch"
+                id="useGeolocation"
+                (click)="toggleGeolocation()"
+                [checked]="useGeolocation"
+              />
+              <label class="form-check-label show-pointer" for="useGeolocation"
+                ><small
+                  ><i class="fa-solid fa-location-crosshairs pe-1"></i>use
+                  geolocation</small
+                ></label
+              >
+            </div>
+        </div>
+
+        <!-- waiting for geolocation -->
+        <div class="col-12">
+            <div class="alert alert-dark mt-4 p-2" [hidden]="!message">
+              <i class="fa-solid fa-triangle-exclamation pe-2"></i>{{ message }}
+            </div>
+          </div>
+        </div>
+        <!-- waiting for geolocation -->
+        
+        <div class="col-12 col-xxl-12" *ngFor="let event of events">
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h3 class="mt-1 mb-1">
+                    <a
+                      [routerLink]="['/events', event._id]"
+                      class="link-primary text-decoration-none"
+                      ><i class="fa-solid fa-location-dot me-2"></i
+                      >{{ event.name }}</a
+                    >
+                  </h3>
+                </div>
+                <div class="ms-2">
+                  <span class="text-dark text-nowrap"><!--{{ event.rating }} -->
+                    <app-stars [rating]="event.rating || 0"></app-stars>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                <span
+                  class="badge rounded-pill text-bg-dark text-nowrap float-end ms-1 mb-1"
+                  ><i class="fa-solid fa-location-arrow me-1"></i
+                  >{{ event.distance | distance }}</span
+                >{{ event.description }}
+              </p>
+              <p class="mb-0">
+                <small class="text-muted">{{ event.location }}</small>
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="badge text-bg-secondary me-1"
+                ><i class="fa-solid fa-tag me-1"></i>{{ event.type }}</span
+              >
+              <span
+                class="badge text-bg-dark me-1"
+                *ngFor="let sport of event.sports"
+                ><i class="fa-solid fa-tag me-1"></i>{{ sport }}</span
+              >
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div class="col-12 col-xxl-12" *ngFor="let event of returnedArray">
+          <!-- Your event card layout -->
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-12">
+              <!-- Pagination -->
+              <pagination [boundaryLinks]="showBoundaryLinks" 
+                          [directionLinks]="showDirectionLinks" 
+                          [totalItems]="totalCount || 0"
+                          [itemsPerPage]="10"
+                          (pageChanged)="pageChanged($event)">
+              </pagination>
+          </div>
+        </div>
+        <!--
+        <div class="row">
+          <div class="col-xs-12 col-12">
+             <div class="content-wrapper">
+                <p class="content-item" *ngFor="let content of returnedArray">{{content}}</p>
+             </div>
+             <pagination [boundaryLinks]="showBoundaryLinks" 
+                [directionLinks]="showDirectionLinks" 
+                [totalItems]="contentArray.length"
+                [itemsPerPage]="5"
+                (pageChanged)="pageChanged($event)"></pagination>
+          </div>
+       </div>-->
+       <!--
+       <div>       
+          <div class="checkbox">
+             <label><input type="checkbox" [(ngModel)]="showBoundaryLinks">Show Boundary Links</label>
+             <br/>
+             <label><input type="checkbox" [(ngModel)]="showDirectionLinks">Show Direction Links</label>
+          </div>
+
+       </div
+       -->
+
+      <!--</div>
+    </div>
+    <div class="col-12 col-md-4 mt-4">
+      <small class="text-muted">{{ header.sidebar }}</small>
+    </div>
+  </div>-->

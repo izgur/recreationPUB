@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="" href="/">
+      <i class="fa-solid fa-map-location-dot me-2"></i><b>RecreationApp</b>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto">
+        <a class="navbar-brand nav-item" routerLink="events">Events</a>
+        <a class="navbar-brand nav-item" routerLink="maps">Maps</a>
+        <a class="navbar-brand nav-item" routerLink="about">About application</a>
+        <a class="navbar-brand nav-item" href="https://github.com/izgur/LP-izgur" target="_blank">Source code</a>
+        <a class="navbar-brand nav-item" href="https://lp-izgur-web-service.onrender.com/api/docs/" target="_blank">API Swagger</a>
+      </ul>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item p-2" *ngIf="!isConnected()">
+          <i class="fa-solid fa-triangle-exclamation text-light"></i>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><i
+            class="fa-solid me-1"
+            [ngClass]="{
+              'fa-user-ninja': !isLoggedIn(),
+              'fa-user-shield': isLoggedIn()
+            }"
+          ></i
+          >{{ getCurrentUser() }}
+          </a>
+          <div class="dropdown-menu dropdown-menu-end">
+            <a routerLink="login" *ngIf="!isLoggedIn()"class="dropdown-item show-pointer">Login</a>
+            <a *ngIf="isLoggedIn()" (click)="logout()"class="dropdown-item show-pointer">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <div class="container-fluid pt-4 pb-4">
+    <router-outlet></router-outlet>
+    <footer class="mt-5">
+      <div class="row">
+        <div class="col-12">
+          <small>&copy; Igor Žgur</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+</main>

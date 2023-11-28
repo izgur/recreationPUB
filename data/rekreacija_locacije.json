@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "School Name": "Gimnazija Ptuj - Podružnična šola Maribor",
+      "Coordinates": [15.6364, 46.5622],
+      "description": "Srednja šola v Mariboru.",
+      "type": "Šola",
+      "comments": "To je srednja šola v Mariboru."
+    },
+    {
+      "id": 2,
+      "School Name": "II. gimnazija Maribor",
+      "Coordinates": [15.6418, 46.5643],
+      "description": "Ena izmed najprestižnejših gimnazij v mestu.",
+      "type": "Šola",
+      "comments": "Ena izmed vodilnih srednjih šol v mestu."
+    },
+    {
+      "id": 3,
+      "School Name": "Srednja ekonomska šola Maribor",
+      "Coordinates": [15.6406, 46.5557],
+      "description": "Šola s poudarkom na ekonomiji in poslovanju.",
+      "type": "Šola",
+      "comments": "Šola s poudarkom na ekonomiji in poslovanju."
+    },
+    {
+      "id": 4,
+      "School Name": "Osnovna šola Ludvika Pliberška Maribor",
+      "Coordinates": [15.6484, 46.5502],
+      "description": "Osnovna šola s bogato zgodovino.",
+      "type": "Šola",
+      "comments": "Osnovna šola z bogato zgodovino."
+    },
+    {
+      "id": 5,
+      "School Name": "Osnovna šola Maksa Durjave Maribor",
+      "Coordinates": [15.6511, 46.5508],
+      "description": "Priznana osnovna šola v Mariboru.",
+      "type": "Šola",
+      "comments": "Priznana osnovna šola v Mariboru."
+    },
+    {
+      "id": 6,
+      "School Name": "Prva gimnazija Maribor",
+      "Coordinates": [15.6476, 46.5564],
+      "description": "Prestižna gimnazija s kakovostno izobrazbo.",
+      "type": "Šola",
+      "comments": "Prestižna gimnazija z visoko kakovostjo izobraževanja."
+    },
+    {
+      "id": 7,
+      "School Name": "Osnovna šola Martina Konšaka Maribor",
+      "Coordinates": [15.6443, 46.5553],
+      "description": "Osnovna šola znana po svoji predanosti učencem.",
+      "type": "Šola",
+      "comments": "Osnovna šola znana po svoji predanosti učencem."
+    },
+    {
+      "id": 8,
+      "School Name": "Osnovna šola Borcev za severno mejo Maribor",
+      "Coordinates": [15.6227, 46.5725],
+      "description": "Osnovna šola s poudarkom na zgodovini in dediščini.",
+      "type": "Šola",
+      "comments": "Osnovna šola s poudarkom na zgodovini in dediščini."
+    },
+    {
+      "id": 9,
+      "School Name": "Srednja elektro-računalniška šola Maribor",
+      "Coordinates": [15.6555, 46.5549],
+      "description": "Tehnična gimnazija za dijake z zanimanjem za elektroniko in računalništvo.",
+      "type": "Šola",
+      "comments": "Tehnična gimnazija za dijake z zanimanjem za elektroniko in računalništvo."
+    },
+    {
+      "id": 10,
+      "School Name": "Osnovna šola Bojana Ilicha Maribor",
+      "Coordinates": [15.6437, 46.5542],
+      "description": "Osnovna šola, ki zagotavlja spodbudno učno okolje.",
+      "type": "Šola",
+      "comments": "Osnovna šola, ki zagotavlja spodbudno učno okolje."
+    }
+  ]
+  

@@ -1,0 +1,195 @@
+<div class="row" *ngIf="location">
+  <div [ngClass]="{ 'col-12': true, 'col-md-6': isConnected() }">
+    <div class="card mt-4">
+      <div class="card-header bg-light">
+        <h4 class="mt-1 mb-1">
+          <i class="fa-regular fa-file-lines pe-2"></i>Description
+        </h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h6>Rating</h6>
+            <p><app-stars [rating]="location.rating || 0"></app-stars></p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div *ngIf="location.sports && location.sports.length > 0">
+              <h6>sports</h6>
+              <p>{{ location.sports.join(", ") }}</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h6>Category</h6>
+            <p>{{ location.category }}</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h6>Type</h6>
+            <p>{{ location.type }}</p>
+          </div>
+          <div class="col-12">
+            <h6>Summary</h6>
+            <p>{{ location.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card mt-4">
+      <div class="card-header bg-light">
+        <h4 class="mt-1 mb-1"><i class="fa-solid fa-tags pe-2"></i>Current Sports</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p class="mb-3 mb-md-0">
+              <span
+                class="badge text-bg-light me-1"
+                *ngFor="let sport of location.sports"
+                ><i class="fa-solid fa-tag me-1"></i>{{ sport }}</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6" *ngIf="isConnected()">
+    <div class="card mt-4">
+      <div class="card-header bg-light">
+        <h4 class="mt-1 mb-1"><i class="fas fa-map-signs pe-2"></i>Location</h4>
+      </div>
+      <div class="card-body">
+        <div class="mb-1">
+          <small class="text-muted">{{ location.location }}</small>
+        </div>
+        <div class="ratio ratio-4x3">
+          <iframe
+            title="Zamljevid"
+            [src]="
+            'https://maps.google.com/maps?q=' +
+              location.coordinates[1] +
+              ',' +
+              location.coordinates[0] +
+              '&z=15&output=embed' | allowUrl
+          "
+            class="rounded-3"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="card mt-4">
+      <div class="card-header bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h4 class="mt-1 mb-1">
+              <i class="fa-regular fa-comments pe-2"></i>User's comments
+            </h4>
+          </div>
+          <div [ngSwitch]="isLoggedIn()">
+            <a *ngSwitchCase="true"
+              class="btn btn-primary btn-sm"
+              [ngClass]="{ 'disabled': !isConnected() }"
+              (click)="openModal(commentForm)"
+              ><i class="fa-regular fa-comment-dots pe-2"></i
+              ><span>Add comment</span></a
+            >
+            <a
+              *ngSwitchDefault
+              routerLink="/login"
+              class="btn btn-primary btn-sm"
+              [ngClass]="{ 'disabled': !isConnected() }"
+              ><i class="fa-solid fa-right-to-bracket pe-2"></i>Login to post
+              comment</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div *ngIf="!location.comments || location.comments.length == 0">
+          No comments yet, please add yours.
+        </div>
+        <div
+          class="mt-2"
+          [ngClass]="!last ? 'mb-4' : ''"
+          *ngFor="let comment of location.comments | mostRecentFirst; last as last"
+        >
+          <div
+            class="d-flex justify-content-between align-items-baseline bg-light rounded-3 p-1"
+          >
+            <div class="ms-1">
+              <app-stars [rating]="comment.rating"></app-stars
+              ><i class="fa-regular fa-user ps-4 pe-2"></i>{{ comment.author }}
+              <i *ngIf="canDeleteComment(comment)"
+                class="fa-solid fa-trash-can text-primary show-pointer ms-4"
+                (click)="deleteComment(comment._id)"
+              ></i>
+            </div>
+            <div>
+              <small>
+                {{ comment.createdOn | date: "d. MMMM, yyyy":"CEST":"sl"
+                }}<i class="fa-regular fa-calendar ps-2 pe-1"></i>
+              </small>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex flex-row align-items-baseline">
+              <div class="p-2"><i class="far fa-comment-dots"></i></div>
+              <div class="p-2">{{ comment.comment }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #commentForm>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">
+      <i class="fa-regular fa-comment-dots pe-2"></i>Add comment
+    </h4>
+    <button
+      type="button"
+      class="btn-close close pull-right"
+      aria-label="Close"
+      (click)="closeModal()"
+    >
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    
+    <div class="alert alert-dark p-2" [hidden]="!formDataError">
+      <i class="fa-solid fa-triangle-exclamation pe-2"></i>{{ formDataError }}
+    </div>
+
+    <div class="form-group">
+      <label for="rating" class="form-label mb-1">Rating</label>
+      <div><rating [max]="5" [(ngModel)]="newComment.rating"></rating></div>
+    </div>
+
+    <div class="form-group">
+      <label for="comment" class="form-label mt-2">Comment</label>
+      <textarea
+        id="comment"
+        [(ngModel)]="newComment.comment"
+        rows="3"
+        class="form-control form-control-sm"
+        placeholder="Enter comment"
+      ></textarea>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-sm btn-secondary"
+      (click)="closeModal()"
+    >
+      <i class="fa-regular fa-circle-xmark me-1"></i>Cancel
+    </button>
+    <button type="button" class="btn btn-sm btn-primary" (click)="addNewComment()">
+      <i class="fa-regular fa-circle-check me-2"></i>Save
+    </button>
+  </div>
+</ng-template>

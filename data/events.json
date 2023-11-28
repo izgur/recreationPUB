@@ -1,0 +1,526 @@
+[
+  {
+      "id": 1,
+      "name": "Group Stretching in the Park",
+      "coordinates": [
+          15.6452,
+          46.5637
+      ],
+      "description": "Join us for a relaxing morning group stretching session in the beautiful City Park. Suitable for all fitness levels.",
+      "type": "outdoor",
+      "comments": [
+          {
+              "author": "igorzgur@gmail.com",
+              "rating": 4,
+              "comment": "A great way to start your day with some gentle stretching.",
+              "createdOn": {
+                  "$date": "2024-11-11T08:00:00Z"
+              }
+          },
+          {
+              "author": "igorzgur@gmail.com",
+              "rating": 5,
+              "comment": "I love this event! It's so relaxing and energizing.",
+              "createdOn": {
+                  "$date": "2024-11-12T10:30:00Z"
+              }
+          }
+      ],
+      "locationId": "65140319dae53b4c4262d52b",
+      "author": "igorzgur@gmail.com",
+      "users": ["test", "test2"],
+      "sports": ["outdoor volleyball"],
+      "rating": 4,
+      "startDate": {
+          "$date": "2023-11-21T08:00:00Z"
+      },
+      "endDate": {
+          "$date": "2023-11-21T10:00:00Z"
+      },
+      "interval": "once a week",
+      "category": ["team", "pairs"],
+      "locationAddName": "At Kodjak"
+  },
+  {
+      "id": 2,
+      "name": "Group Football Adventure at Partizan Maribor",
+      "coordinates": [
+          15.6490,
+          46.5568
+      ],
+      "description": "Explore the scenic Partizan playground",
+      "type": "outdoor",
+      "comments": [
+          {
+              "author": "igorzgur@gmail.com",
+              "rating": 5,
+              "comment": "Amazing experience near the river!",
+              "createdOn": {
+                  "$date": "2024-11-13T12:15:00Z"
+              }
+          }
+      ],
+      "locationId": "65140319dae53b4c4262d52b",
+      "author": "igorzgur@gmail.com",
+      "users": ["test", "test2"],
+      "sports": ["football"],
+      "rating": 4,
+      "startDate": {
+          "$date": "2023-11-21T12:00:00Z"
+      },
+      "endDate": {
+          "$date": "2023-11-21T20:00:00Z"
+      },
+      "interval": "daily",
+      "category": ["team"],
+      "locationAddName": "Pri Jurčeku"
+  },
+  {
+    "id": 3,
+    "name": "Group Stretching in the Park Ljudski Vrt",
+    "coordinates": [
+        15.6452,
+        46.5637
+    ],
+    "description": "beautiful City Park. Suitable for all fitness levels.",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 4,
+            "comment": "A great way to start your day.",
+            "createdOn": {
+                "$date": "2024-11-10T08:00:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test2"],
+    "sports": ["outdoor volleyball"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T08:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T10:00:00Z"
+    },
+    "interval": "once a week",
+    "category": ["team", "pairs"],
+    "locationAddName": "At Kodjak"
+},
+{
+    "id": 4,
+    "name": "Maribor",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "playground",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "Amazing experience near the river!",
+            "createdOn": {
+                "$date": "2024-11-13T12:15:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["football"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T12:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T20:00:00Z"
+    },
+    "interval": "daily",
+    "category": ["team"],
+    "locationAddName": "Pri Jurčeku"
+},
+{
+    "id": 5,
+    "name": "Park streching",
+    "coordinates": [
+        15.6452,
+        46.5637
+    ],
+    "description": "Join us for a relaxing morning fitness levels.",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 4,
+            "comment": "A great way to start your day with some gentle stretching.",
+            "createdOn": {
+                "$date": "2024-11-11T08:00:00Z"
+            }
+        },
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "I love this event! It's so relaxing and energizing.",
+            "createdOn": {
+                "$date": "2024-11-12T10:30:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["outdoor volleyball"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T08:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T10:00:00Z"
+    },
+    "interval": "once a week",
+    "category": ["team", "pairs"],
+    "locationAddName": "At Kodjak"
+},
+{
+    "id": 6,
+    "name": "Group Football on the main playground",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "Explore together",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "Amazing experience near the river!",
+            "createdOn": {
+                "$date": "2024-11-13T12:15:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["football"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T12:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T20:00:00Z"
+    },
+    "interval": "daily",
+    "category": ["team"],
+    "locationAddName": "Pri Jurčeku"
+},
+{
+    "id": 7,
+    "name": "Group Stretching",
+    "coordinates": [
+        15.6452,
+        46.5637
+    ],
+    "description": "Join us, all fitness levels.",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 4,
+            "comment": "A great way to start your day with some gentle stretching.",
+            "createdOn": {
+                "$date": "2024-11-11T08:00:00Z"
+            }
+        },
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "I love this event! It's so relaxing and energizing.",
+            "createdOn": {
+                "$date": "2024-11-12T10:30:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["outdoor volleyball"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T08:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T10:00:00Z"
+    },
+    "interval": "once a week",
+    "category": ["team", "pairs"],
+    "locationAddName": "At Kodjak"
+},
+{
+    "id": 8,
+    "name": "Partizan Maribor",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "the scenic Partizan playground",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "Amazing experience near the river!",
+            "createdOn": {
+                "$date": "2024-11-13T12:15:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["football"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T12:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T20:00:00Z"
+    },
+    "interval": "daily",
+    "category": ["team"],
+    "locationAddName": "Pri Jurčeku"
+},
+{
+    "id": 9,
+    "name": "Group Stretching",
+    "coordinates": [
+        15.6452,
+        46.5637
+    ],
+    "description": "group stretching session in the beautiful City Park. Suitable for all fitness levels.",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 4,
+            "comment": "A great way to start your day with some gentle stretching.",
+            "createdOn": {
+                "$date": "2024-11-11T08:00:00Z"
+            }
+        },
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "I love this event! It's so relaxing and energizing.",
+            "createdOn": {
+                "$date": "2024-11-12T10:30:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["outdoor volleyball"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T08:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T10:00:00Z"
+    },
+    "interval": "once a week",
+    "category": ["team", "pairs"],
+    "locationAddName": "At Kodjak"
+},
+{
+    "id": 10,
+    "name": "Group Football Adv",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "Explore",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "Amazing experience near the river!",
+            "createdOn": {
+                "$date": "2024-11-13T12:15:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52b",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["football"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T12:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T20:00:00Z"
+    },
+    "interval": "daily",
+    "category": ["team"],
+    "locationAddName": "Pri Jurčeku"
+},
+{
+    "id": 11,
+    "name": "Group",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": " Suitable for all fitness levels.",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 4,
+            "comment": "A great way to start your day with some gentle stretching.",
+            "createdOn": {
+                "$date": "2024-11-11T08:00:00Z"
+            }
+        },
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "I love this event! It's so relaxing and energizing.",
+            "createdOn": {
+                "$date": "2024-11-12T10:30:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52c",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["outdoor volleyball"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T08:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T10:00:00Z"
+    },
+    "interval": "once a week",
+    "category": ["team", "pairs"],
+    "locationAddName": "At Kodjak"
+},
+{
+    "id": 12,
+    "name": "Partizan Maribor",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "Explore the scenic Partizan playground",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "Amazing experience near the river!",
+            "createdOn": {
+                "$date": "2024-11-13T12:15:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52c",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["football"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T12:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T20:00:00Z"
+    },
+    "interval": "daily",
+    "category": ["team"],
+    "locationAddName": "Pri Jurčeku"
+},
+{
+    "id": 13,
+    "name": "Group Stretching",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "Join us for a relaxing morning group stretching session in the beautiful City Park. Suitable for all fitness levels.",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 4,
+            "comment": "A great way to start your day with some gentle stretching.",
+            "createdOn": {
+                "$date": "2024-11-11T08:00:00Z"
+            }
+        },
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "I love this event! It's so relaxing and energizing.",
+            "createdOn": {
+                "$date": "2024-11-12T10:30:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52c",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3", "Đoni"],
+    "sports": ["outdoor volleyball"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T08:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T10:00:00Z"
+    },
+    "interval": "once a week",
+    "category": ["team", "pairs"],
+    "locationAddName": "At Kodjak"
+},
+{
+    "id": 14,
+    "name": " Adventure at Partizan Maribor",
+    "coordinates": [
+        15.6490,
+        46.5568
+    ],
+    "description": "Explore the scenic Partizan playground",
+    "type": "outdoor",
+    "comments": [
+        {
+            "author": "igorzgur@gmail.com",
+            "rating": 5,
+            "comment": "Amazing experience near the river!",
+            "createdOn": {
+                "$date": "2024-11-13T12:15:00Z"
+            }
+        }
+    ],
+    "locationId": "65140319dae53b4c4262d52c",
+    "author": "igorzgur@gmail.com",
+    "users": ["test", "test3"],
+    "sports": ["football"],
+    "rating": 4,
+    "startDate": {
+        "$date": "2023-11-21T12:00:00Z"
+    },
+    "endDate": {
+        "$date": "2023-11-21T15:00:00Z"
+    },
+    "interval": "daily",
+    "category": ["team"],
+    "locationAddName": "Pri Jurčeku"
+}
+]

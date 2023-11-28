@@ -1,0 +1,12 @@
+https://localhost:3000/
+https://localhost:3000/login
+https://localhost:3000/register
+https://localhost:3000/about
+https://localhost:3000/locations/65140319dae53b4c4262d52b
+https://localhost:3000/locations/65140319dae53b4c4262d52c
+https://localhost:3000/locations/65140319dae53b4c4262d52d
+https://localhost:3000/locations/65140319dae53b4c4262d52e
+https://localhost:3000/events/6548f60abec78da7942f8302
+https://localhost:3000/events/6548f60abec78da7942f8303
+https://localhost:3000/events/655a7e7b42625fa6ccfc77ff
+https://localhost:3000/events/655a7e7b42625fa6ccfc7800

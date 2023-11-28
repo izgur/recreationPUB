@@ -1,0 +1,107 @@
+[
+    {
+      "_id": {
+        "$oid": "65140319dae53b4c4262d52b"
+      },
+      "id": 11,
+      "name": "Maribor Science and Technology High School",
+      "category": "team",
+      "type": "indoor",
+      "sports": [
+        "football",
+        "basketball"
+      ],
+      "description": "A leading technical high school in Maribor, specializing in science and technology education.",
+      "location": "Situated in the heart of Maribor, providing advanced technical education.",
+      "coordinates": [
+        15.6452,
+        46.5637
+      ],
+      "comments": [
+        {
+          "_id": {
+            "$oid": "65140319dae53b4c4262d208"
+          },
+          "author": "igorzgur@gmail.com",
+          "rating": 4,
+          "comment": "Nič ni več tako kot je bilo.",
+          "createdOn": {
+            "$date": "1918-12-11T00:00:00Z"
+          }
+        }
+      ],
+      "rating": 4,
+      "author": "igorzgur@gmail.com"
+    },
+    {
+      "_id": {
+        "$oid": "65140319dae53b4c4262d52c"
+      },
+      "id": 12,
+      "name": "Maribor Music School",
+      "category": "pairs",
+      "type": "outdoor",
+      "sports": [
+        "football",
+        "basketball",
+        "volleyball"
+      ],
+      "description": "Glasbena šola sredi Maribora.",
+      "location": "Located in Maribor, known for producing talented musicians and artists.",
+      "coordinates": [
+        15.6490,
+        46.5568
+      ],
+      "comments": [
+        {
+          "_id": {
+            "$oid": "65140319dae53b4c4262d208"
+          },
+          "author": "igorzgur@gmail.com",
+          "rating": 4,
+          "comment": "Nič ni več tako kot je bilo.",
+          "createdOn": {
+            "$date": "1918-12-11T00:00:00Z"
+          }
+        }
+      ],
+      "rating": 4,
+      "author": "igorzgur@gmail.com"  
+    },
+    {
+      "_id": {
+        "$oid": "65140319dae53b4c4262d52d"
+      },
+      "id": 13,
+      "name": "Music School",
+      "category": "pairs",
+      "type": "outdoor",
+      "sports": [
+        "football",
+        "basketball",
+        "volleyball"
+      ],
+      "description": "Glasbena šola .",
+      "location": "Located in Maribor",
+      "coordinates": [
+        15.6690,
+        46.5768
+      ],
+      "comments": [
+        {
+          "_id": {
+            "$oid": "65140319dae53b4c4262d308"
+          },
+          "author": "igorzgur@gmail.com",
+          "rating": 4,
+          "comment": "Nič ni več tako kot je bilo.",
+          "createdOn": {
+            "$date": "1918-12-11T00:00:00Z"
+          }
+        }
+      ],
+      "rating": 2,
+      "author": "igorzgur@gmail.com"  
+    }
+    
+  ]

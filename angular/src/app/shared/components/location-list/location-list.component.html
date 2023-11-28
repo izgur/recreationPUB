@@ -1,0 +1,81 @@
+      <div class="row">
+        <!-- toogle geolocation-->
+        <div class="col-12">
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input show-pointer"
+                type="checkbox"
+                role="switch"
+                id="useGeolocation"
+                (click)="toggleGeolocation()"
+                [checked]="useGeolocation"
+              />
+              <label class="form-check-label show-pointer" for="useGeolocation"
+                ><small
+                  ><i class="fa-solid fa-location-crosshairs pe-1"></i>use
+                  geolocation</small
+                ></label
+              >
+            </div>
+        </div>
+
+        <!-- waiting for geolocation -->
+        <div class="col-12">
+            <div class="alert alert-dark mt-4 p-2" [hidden]="!message">
+              <i class="fa-solid fa-triangle-exclamation pe-2"></i>{{ message }}
+            </div>
+          </div>
+        </div>
+        <!-- waiting for geolocation -->
+        
+        <div class="col-12 col-xxl-12" *ngFor="let location of locations">
+          <div class="card mt-4">
+            <div class="card-header bg-light">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="mt-1 mb-1">
+                    <a
+                      [routerLink]="['/locations', location._id]"
+                      class="link-primary text-decoration-none"
+                      ><i class="fa-solid fa-location-dot me-2"></i
+                      >{{ location.name }}</a
+                    >
+                  </h4>
+                </div>
+                <div class="ms-2">
+                  <span class="text-dark text-nowrap"><!--{{ location.rating }} -->
+                    <app-stars [rating]="location.rating || 0"></app-stars>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>
+                <span
+                  class="badge rounded-pill text-bg-dark text-nowrap float-end ms-1 mb-1"
+                  ><i class="fa-solid fa-location-arrow me-1"></i
+                  >{{ location.distance | distance }}</span
+                >{{ location.description }}
+              </p>
+              <p class="mb-0">
+                <small class="text-muted">{{ location.location }}</small>
+              </p>
+            </div>
+            <div class="card-footer">
+              <span class="badge text-bg-secondary me-1"
+                ><i class="fa-solid fa-tag me-1"></i>{{ location.type }}</span
+              >
+              <span
+                class="badge text-bg-dark me-1"
+                *ngFor="let sport of location.sports"
+                ><i class="fa-solid fa-tag me-1"></i>{{ sport }}</span
+              >
+            </div>
+          </div>
+        </div>
+      <!--</div>
+    </div>
+    <div class="col-12 col-md-4 mt-4">
+      <small class="text-muted">{{ header.sidebar }}</small>
+    </div>
+  </div>-->

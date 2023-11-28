@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles/fa.all.min.css" />
+    <link rel="stylesheet" href="/styles/bootstrap.sandstone.min.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="container p-4">
+      <nav class="mb-4"><a
+          href="/"
+          class="btn btn-sm btn-outline-dark mt-4"
+          role="button"
+        ><i class="fa-solid fa-house-chimney pe-1"></i>List of possible recreation:</a>
+        <a
+          href="/location"
+          class="btn btn-sm btn-outline-dark mt-4"
+          role="button"
+        ><i class="fa-solid fa-map-location-dot pe-1"></i>Location details</a>
+        <a
+          href="/location/comment/new"
+          class="btn btn-sm btn-outline-dark mt-4"
+          role="button"
+        ><i class="fa-solid fa-map-location-dot pe-1"></i>Add comment</a>
+        <a
+          href="/about"
+          class="btn btn-sm btn-outline-dark mt-4"
+          role="button"
+        ><i class="fa-solid fa-map-location-dot pe-1"></i>About</a></nav>
+      {{{body}}}
+      <footer class="mt-4">&copy; Igor Žgur</footer>
+    </div>
+    <script src="/javascript/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

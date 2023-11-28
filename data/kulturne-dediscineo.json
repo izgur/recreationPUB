@@ -1,0 +1,157 @@
+[
+  {
+    "_id": {
+      "$oid": "65140319dae53b4c4262d209"
+    },
+    "id": 29884,
+    "name": "Šentrupert na Dolenjskem - Muzej na prostem",
+    "category": "stavbe",
+    "type": "profana stavbna dediščina",
+    "keywords": [
+      "muzej na prostem",
+      "kozolec na psa",
+      "kozolec s plaščem",
+      "enojni kozolec",
+      "nizki kozolec",
+      "toplar",
+      "vzporedni kozolec"
+    ],
+    "description": "Muzej na prostem sestavljajo skupina 17 kozolcev različnih tipov in dve enostavni sušilni napravi (belokranjska ostrv in ribniški kozouček). Postavitev iz 2012 prikazuje genezo kozolca na Slovenskem in raznolikost kozolcev v Mirnski dolini.",
+    "location": "Muzej na prostem je urejen na južnem obrobju Šentruperta na Dolenjskem.",
+    "institution": "ZVKD Novo mesto",
+    "municipality": "ŠENTRUPERT",
+    "coordinates": [
+      15.0914351743,
+      45.9748324693[
+        {
+          "_id": {
+            "$oid": "65140319dae53b4c4262d209"
+          },
+          "id": 1,
+          "name": "Gimnazija Ptuj - Podružnična šola Maribor",
+          "category": "education",
+          "type": "secondary school",
+          "keywords": [
+            "high school",
+            "education",
+            "Maribor"
+          ],
+          "description": "A prestigious secondary school in Maribor offering quality education.",
+          "location": "Located in the city of Maribor, Slovenia.",
+          "institution": "Maribor School Board",
+          "municipality": "MARIBOR",
+          "coordinates": [
+            15.6364,
+            46.5622
+          ],
+          "fields": [
+            "education",
+            "academic excellence"
+          ]
+        },
+        {
+          "_id": {
+            "$oid": "65140319dae53b4c4262d52b"
+          },
+          "id": 11,
+          "name": "Maribor Science and Technology High School",
+          "category": "education",
+          "type": "technical high school",
+          "keywords": [
+            "science",
+            "technology",
+            "Maribor"
+          ],
+          "description": "A leading technical high school in Maribor, specializing in science and technology education.",
+          "location": "Situated in the heart of Maribor, providing advanced technical education.",
+          "institution": "Maribor School Board",
+          "municipality": "MARIBOR",
+          "coordinates": [
+            15.6452,
+            46.5637
+          ],
+          "fields": [
+            "science",
+            "technology",
+            "education"
+          ]
+        },
+        {
+          "_id": {
+            "$oid": "65140319dae53b4c4262d52b"
+          },
+          "id": 12,
+          "name": "Maribor Music School",
+          "category": "education",
+          "type": "music school",
+          "keywords": [
+            "music",
+            "arts",
+            "Maribor"
+          ],
+          "description": "A renowned music school in Maribor, nurturing young talent in the field of music and the arts.",
+          "location": "Located in Maribor, known for producing talented musicians and artists.",
+          "institution": "Maribor School Board",
+          "municipality": "MARIBOR",
+          "coordinates": [
+            15.6490,
+            46.5568
+          ],
+          "fields": [
+            "music",
+            "arts",
+            "education"
+          ]
+        }
+      ]
+    ],
+    "datation": "zadnja četrtina 18. stol., 19. stol., prva polovica 20. stol., prva četrtina 21. stol., 2012",
+    "fields": [
+      "etnologija",
+      "krajinska arhitektura",
+      "tehniška zgodovina"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "65140319dae53b4c4262d52b"
+    },
+    "id": 5844,
+    "name": "Ljubljana - Cankarjeva spominska soba na Rožniku",
+    "category": "spominski objekti in kraji",
+    "type": "memorialna dediščina",
+    "keywords": [
+      "spominska soba"
+    ],
+    "description": "Spominska soba, posvečena Ivanu Cankarju, je bila urejena leta 1948 in prenovljena v letih 1965 in 1998. Pisatelj je na Rožniku živel v letih 1910 - 1917, muzejsko postavitev je pripravil Mestni muzej Ljubljana.",
+    "location": "Spominska soba je urejena v stavbi, ki stoji nasproti gostilne Rožnik, na Cankarjevem vrhu (Rožnik).",
+    "institution": "ZVKD Ljubljana",
+    "municipality": "LJUBLJANA",
+    "coordinates": [
+      14.4765778196,
+      46.0557820208
+    ],
+    "synonyms": [
+      "Cankarjev vrh"
+    ],
+    "datation": "20. stol., 1948, 1965, 1998",
+    "authors": "Mestni muzej Ljubljana (arhitekt; 1948)",
+    "fields": [
+      "zgodovina"
+    ],
+    "comments": [
+      {
+        "_id": {
+          "$oid": "65140319dae53b4c4262d208"
+        },
+        "author": "Ivan Cankar",
+        "rating": 4,
+        "comment": "Nič ni več tako kot je bilo.",
+        "createdOn": {
+          "$date": "1918-12-11T00:00:00Z"
+        }
+      }
+    ],
+    "rating": 4
+  }
+]

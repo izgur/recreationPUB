@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "School Name": "Gimnazija Ptuj - Podružnična šola Maribor",
+    "Coordinates": [15.6364000000, 46.5622000000],
+    "description": "Srednja šola v Mariboru.",
+    "type": "Šola",
+    "comments": "To je srednja šola v Mariboru.",
+    "authors": "Ana Novak",
+    "category": "Šola"
+  },
+  {
+    "id": 2,
+    "School Name": "II. gimnazija Maribor",
+    "Coordinates": [15.6418000000, 46.5643000000],
+    "description": "Ena izmed najprestižnejših gimnazij v mestu.",
+    "type": "Šola",
+    "comments": "Ena izmed vodilnih srednjih šol v mestu.",
+    "authors": "Miha Kovač",
+    "category": "Šola"
+  },
+  {
+    "id": 3,
+    "School Name": "Srednja ekonomska šola Maribor",
+    "Coordinates": [15.6406000000, 46.5557000000],
+    "description": "Šola s poudarkom na ekonomiji in poslovanju.",
+    "type": "Šola",
+    "comments": "Šola s poudarkom na ekonomiji in poslovanju.",
+    "authors": "Maja Horvat",
+    "category": "Šola"
+  },
+  {
+    "id": 4,
+    "School Name": "Osnovna šola Ludvika Pliberška Maribor",
+    "Coordinates": [15.6484000000, 46.5502000000],
+    "description": "Osnovna šola s bogato zgodovino.",
+    "type": "Šola",
+    "comments": "Osnovna šola z bogato zgodovino.",
+    "authors": "Luka Zupan",
+    "category": "Šola"
+  },
+  {
+    "id": 5,
+    "School Name": "Osnovna šola Maksa Durjave Maribor",
+    "Coordinates": [15.6511000000, 46.5508000000],
+    "description": "Priznana osnovna šola v Mariboru.",
+    "type": "Šola",
+    "comments": "Priznana osnovna šola v Mariboru.",
+    "authors": "Tina Gorišek",
+    "category": "Šola"
+  },
+  {
+    "id": 6,
+    "School Name": "Prva gimnazija Maribor",
+    "Coordinates": [15.6476000000, 46.5564000000],
+    "description": "Prestižna gimnazija s kakovostno izobrazbo.",
+    "type": "Šola",
+    "comments": "Prestižna gimnazija z visoko kakovostjo izobraževanja.",
+    "authors": "Jan Vidmar",
+    "category": "Šola"
+  },
+  {
+    "id": 7,
+    "School Name": "Osnovna šola Martina Konšaka Maribor",
+    "Coordinates": [15.6443000000, 46.5553000000],
+    "description": "Osnovna šola znana po svoji predanosti učencem.",
+    "type": "Šola",
+    "comments": "Osnovna šola znana po svoji predanosti učencem.",
+    "authors": "Eva Novak",
+    "category": "Šola"
+  },
+  {
+    "id": 8,
+    "School Name": "Osnovna šola Borcev za severno mejo Maribor",
+    "Coordinates": [15.6227000000, 46.5725000000],
+    "description": "Osnovna šola s poudarkom na zgodovini in dediščini.",
+    "type": "Šola",
+    "comments": "Osnovna šola s poudarkom na zgodovini in dediščini.",
+    "authors": "Matej Horvat",
+    "category": "Šola"
+  },
+  {
+    "id": 9,
+    "School Name": "Srednja elektro-računalniška šola Maribor",
+    "Coordinates": [15.6555000000, 46.5549000000],
+    "description": "Tehnična gimnazija za dijake z zanimanjem za elektroniko in računalništvo.",
+    "type": "Šola",
+    "comments": "Tehnična gimnazija za dijake z zanimanjem za elektroniko in računalništvo.",
+    "authors": "Nina Kovač",
+    "category": "Šola"
+  },
+  {
+    "id": 10,
+    "School Name": "Osnovna šola Bojana Ilicha Maribor",
+    "Coordinates": [15.6437000000, 46.5542000000],
+    "description": "Osnovna šola, ki zagotavlja spodbudno učno okolje.",
+    "type": "Šola",
+    "comments": "Osnovna šola, ki zagotavlja spodbudno učno okolje.",
+    "authors": "Lara Kovač",
+    "category": "Šola"
+  }
+]

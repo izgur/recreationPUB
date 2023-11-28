@@ -1,0 +1,9 @@
+.map-container {
+    height: 800px;
+  }
+  
+  #map-list {
+    background-color: aliceblue;
+    overflow-y: scroll;
+    padding: 0px !important;
+  }

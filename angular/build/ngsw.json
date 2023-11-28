@@ -1,0 +1,148 @@
+{
+  "configVersion": 1,
+  "timestamp": 1701201183866,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.9e3b066b4b203fa3.js",
+        "/manifest.webmanifest",
+        "/polyfills.3d9e06c09e48a164.js",
+        "/runtime.5169c0ef91e18f39.js",
+        "/styles.1cf2084b803133af.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/javascript/bootstrap.bundle.min.js",
+        "/assets/javascript/bootstrap.bundle.min.js.map",
+        "/assets/layers-2x.png",
+        "/assets/layers.png",
+        "/assets/marker-icon-2x.png",
+        "/assets/marker-icon.png",
+        "/assets/marker-shadow.png",
+        "/assets/styles/bootstrap.sandstone.min.css",
+        "/assets/styles/bootstrap.sandstone.min.css.map",
+        "/assets/styles/fa.all.min.css",
+        "/assets/styles/style.css",
+        "/assets/webfonts/BlackOpsOneLatin.woff2",
+        "/assets/webfonts/BlackOpsOneLatinExt.woff2",
+        "/assets/webfonts/fa-brands-400.ttf",
+        "/assets/webfonts/fa-brands-400.woff2",
+        "/assets/webfonts/fa-regular-400.ttf",
+        "/assets/webfonts/fa-regular-400.woff2",
+        "/assets/webfonts/fa-solid-900.ttf",
+        "/assets/webfonts/fa-solid-900.woff2",
+        "/assets/webfonts/fa-v4compatibility.ttf",
+        "/assets/webfonts/fa-v4compatibility.woff2",
+        "/layers-2x.9859cd1231006a4a.png",
+        "/layers.ef6db8722c2c3f9a.png",
+        "/marker-icon.d577052aa271e13f.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "demo-api",
+      "patterns": [
+        "http:\\/\\/127\\.0\\.0\\.1:3000\\/.*",
+        "https:\\/\\/127\\.0\\.0\\.1:3000\\/.*",
+        "http:\\/\\/host\\.docker\\.internal:3000\\/.*",
+        "https:\\/\\/host\\.docker\\.internal:3000\\/.*",
+        "https:\\/\\/lp-izgur-web-service\\.onrender\\.com\\/api\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 20,
+      "maxAge": 3600000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/assets/javascript/bootstrap.bundle.min.js": "81c3f5284912c0f9453028cac89e342223f19103",
+    "/assets/javascript/bootstrap.bundle.min.js.map": "a016698cca14f9d863250a4e87a949d3e93b7152",
+    "/assets/layers-2x.png": "152a162333e46d24f9d89f566312fc0c64011dee",
+    "/assets/layers.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
+    "/assets/marker-icon-2x.png": "cf3a536596b1f58e0ac805404183c8e6d6bdacb5",
+    "/assets/marker-icon.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
+    "/assets/marker-shadow.png": "7b6a8df63930381e96604e705168d0527d6b82bc",
+    "/assets/styles/bootstrap.sandstone.min.css": "618c6253f661d7bb39b23467ab18364613747d93",
+    "/assets/styles/bootstrap.sandstone.min.css.map": "95e5e397bdfa077a0c7298a8e6a160783c20e156",
+    "/assets/styles/fa.all.min.css": "4a39fbc8ffa65fa5a8427d0fe34bb8b91694af7c",
+    "/assets/styles/style.css": "9931d12c81bd737880eb0d0d0519693e97e30bca",
+    "/assets/webfonts/BlackOpsOneLatin.woff2": "ab42ca8fecd886a7f5512e0214ce8adce9102bc5",
+    "/assets/webfonts/BlackOpsOneLatinExt.woff2": "9313091a29818518f6854ebdc3db65b93ea3ab9c",
+    "/assets/webfonts/fa-brands-400.ttf": "42350ed503d66ae23a9c68d38966f25bc3007319",
+    "/assets/webfonts/fa-brands-400.woff2": "380bea4e9eb484d835d89cc608f2af7c3179e8a4",
+    "/assets/webfonts/fa-regular-400.ttf": "9262ea1d0711b658bb75d5cbe9345e080c7dea90",
+    "/assets/webfonts/fa-regular-400.woff2": "56be4c28de7c67747b0fe3dd606be8b319f6d4f4",
+    "/assets/webfonts/fa-solid-900.ttf": "d2caaf5ce75d0da13ace325e24f7aa7079ef1891",
+    "/assets/webfonts/fa-solid-900.woff2": "a7fca574d24e9ffa5ee0e0589ffe17277ae4ec27",
+    "/assets/webfonts/fa-v4compatibility.ttf": "b12c2b515fb62c370de1af4ca99635b00aabfe58",
+    "/assets/webfonts/fa-v4compatibility.woff2": "9e1f957bf329bd280aba89e578420301b312403d",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "6feea23eb1301bffa14ec750b349453b603a0f9f",
+    "/layers-2x.9859cd1231006a4a.png": "152a162333e46d24f9d89f566312fc0c64011dee",
+    "/layers.ef6db8722c2c3f9a.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
+    "/main.9e3b066b4b203fa3.js": "75f3f7bf018dc21b503054c9fd3c7e1636d3b477",
+    "/manifest.webmanifest": "6fa034ca6cec7fa093a5b90748c357b7aa15b1e6",
+    "/marker-icon.d577052aa271e13f.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
+    "/polyfills.3d9e06c09e48a164.js": "55a63764520a22e20aa308a78f9b65a147d073d6",
+    "/runtime.5169c0ef91e18f39.js": "f96c7b58085089d0c88be8893a2c371a175ca999",
+    "/styles.1cf2084b803133af.css": "dc7d16d8596d0416084f13a9ff6abd86caadd9d0"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

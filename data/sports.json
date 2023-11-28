@@ -1,0 +1,32 @@
+[
+    {
+      "name": "football",
+      "type": "indoor",
+      "category": [
+        "team"
+      ]
+    },
+    {
+      "name": "basketball",
+      "type": "indoor",
+      "category": [
+        "team"
+      ]
+    },
+    {
+      "name": "fitness",
+      "type": "outdoor",
+      "category": [
+        "individual"
+      ]
+    },
+    {
+      "name": "sup",
+      "type": "water",
+      "category": [
+        "team",
+        "individual"
+      ]
+    }
+    
+]
