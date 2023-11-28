@@ -1,6 +1,6 @@
 # DevOps akademija - Web development
 
-# Projekt: RecreationApp (Igor Žgur)
+# Projekt: RecreationApp
 
 ## Opis
 - aplikacija za pregled športne rekreacije   v tvoji bližini
