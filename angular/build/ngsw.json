@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1701202716112,
+  "timestamp": 1701203328787,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.9e3b066b4b203fa3.js",
+        "/main.facc8821727bd47a.js",
         "/manifest.webmanifest",
         "/polyfills.3d9e06c09e48a164.js",
         "/runtime.5169c0ef91e18f39.js",
@@ -73,7 +73,8 @@
         "https:\\/\\/127\\.0\\.0\\.1:3000\\/.*",
         "http:\\/\\/host\\.docker\\.internal:3000\\/.*",
         "https:\\/\\/host\\.docker\\.internal:3000\\/.*",
-        "https:\\/\\/lp-izgur-web-service\\.onrender\\.com\\/api\\/.*"
+        "https:\\/\\/lp-izgur-web-service\\.onrender\\.com\\/api\\/.*",
+        "https:\\/\\/recreation\\.onrender\\.com\\/api\\/.*"
       ],
       "strategy": "freshness",
       "maxSize": 20,
@@ -116,10 +117,10 @@
     "/assets/webfonts/fa-v4compatibility.ttf": "b12c2b515fb62c370de1af4ca99635b00aabfe58",
     "/assets/webfonts/fa-v4compatibility.woff2": "9e1f957bf329bd280aba89e578420301b312403d",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "6feea23eb1301bffa14ec750b349453b603a0f9f",
+    "/index.html": "1d6d3042718778d300ebb1d97904aa31567acef1",
     "/layers-2x.9859cd1231006a4a.png": "152a162333e46d24f9d89f566312fc0c64011dee",
     "/layers.ef6db8722c2c3f9a.png": "c9e7528e491a39232ba24a2706c6c739d6fb0f06",
-    "/main.9e3b066b4b203fa3.js": "75f3f7bf018dc21b503054c9fd3c7e1636d3b477",
+    "/main.facc8821727bd47a.js": "8ff5ffbd229642b6f0872bf1241669938c81d364",
     "/manifest.webmanifest": "6fa034ca6cec7fa093a5b90748c357b7aa15b1e6",
     "/marker-icon.d577052aa271e13f.png": "60a90bcbb2b42b7ddb4556db94eb7c1084b0e5da",
     "/polyfills.3d9e06c09e48a164.js": "55a63764520a22e20aa308a78f9b65a147d073d6",
