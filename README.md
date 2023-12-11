@@ -1,6 +1,7 @@
 # DevOps akademija - Web development
 
-# Projekt: RecreationApp (Igor Žgur)
+# Projekt: RecreationAppr Žgur)
+https://recreation.onrender.com/
 
 ## Opis
 - aplikacija za pregled športne rekreacije   v tvoji bližini
@@ -12,6 +13,7 @@
 Prezentacija: https://docs.google.com/presentation/d/18udH3Qgc5tEygSdcVXOyaFkIC2DvSL9L2zg4jtFFKbw/edit?usp=sharing
 Produkcija:   https://lp-izgur-web-service.onrender.com/
 Dokumentacija API metod:   https://lp-izgur-web-service.onrender.com/api/docs
+
 
 Username: test2@gmail.com
 Password: test2
