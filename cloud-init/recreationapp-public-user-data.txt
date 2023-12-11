@@ -1,0 +1,79 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - nginx
+  - npm
+write_files:
+  - path: /etc/nginx/sites-available/default
+    content: |
+      server {
+        listen 80;
+        location / {
+          proxy_pass http://localhost:3000;
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection keep-alive;
+          proxy_set_header Host $host;
+          proxy_cache_bypass $http_upgrade;
+        }
+      }
+    owner: www-data:www-data
+    permissions: '0644'
+runcmd:
+  - service nginx restart
+  - echo "\n**************************\n1.INSTALLING NODEJS\n**************************"
+  - curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+  - apt-get install -y nodejs
+  - echo "\n**************************\n2.CLONE GITHUB REPO\n**************************"
+  - git clone https://github.com/izgur/recreationPUB /home/recreation
+  - cd /home/recreation
+  - echo "\n**************************\n3.CREATING .env FILE\n**************************"
+  - echo "TEST=1\nNODE_ENV=production\nJWT_SECRET=superSecretPassword\nMONGODB_ATLAS_URI=mongodb+srv://igorzgur:-Mongo93545177@clustersports.fbuqktm.mongodb.net/Sports?retryWrites=true&w=majority\nHTTPS=false" > .env
+  - npm install -g npm@10.2.5
+  - npm install -g @angular/cli
+  - echo "\n**************************\n4.NPM INSTALL BACKEND\n**************************"
+  - npm install
+  - cd angular
+  - echo "\n**************************\n5.NPM INSTALL ANGULAR\n**************************"
+  - npm install
+  - echo "\n**************************\n6.NPM INSTALL LEAFLET MAPS\n**************************"
+  - npm install leaflet @asymmetrik/ngx-leaflet
+  - npm install --save-dev @types/leaflet
+  - echo "\n**************************\n7.NG BUILD ANGULAR\n**************************"
+  - ng build --output-path build --configuration production
+  - cd ..
+  - pwd
+  - echo "\n**************************\n8.CREATE SYSTEMD FILE \n**************************"
+  - |
+    cat << EOF > /etc/systemd/system/recreationapp.service
+    [Unit]
+    Description=Recreation App
+    After=network.target
+
+    [Service]
+    Environment=NODE_ENV=production
+    Environment=JWT_SECRET=superSecretPassword
+    Environment=MONGODB_ATLAS_URI=mongodb+srv://igorzgur:-Mongo93545177@clustersports.fbuqktm.mongodb.net/Sports?retryWrites=true&w=majority
+    Environment=HTTPS=false
+    WorkingDirectory=/home/recreation
+    ExecStart=/usr/bin/npm run start
+    #Optional: To cleanly end the file on stop use this command. This sends a terminal interrupt command on the executable script
+    KillSignal=SIGINT
+    #Automatically restart on kill
+    Restart=always
+    # User=www-data
+    # Group=www-data
+    StandardOutput=file:/home/recreationapp.log
+    StandardError=file:/home/recreationapp-error.log
+    SyslogIdentifier=recreationapp
+
+    [Install]
+    WantedBy=multi-user.target
+    EOF
+  - echo "/etc/systemd/system/recreationapp.service created...."
+  - echo "\n**************************\n9. START APP WITH SYSTEMD\n**************************"
+  - systemctl daemon-reload
+  - systemctl enable recreationapp.service
+  - systemctl start recreationapp.service
+  - echo "\n**************************\n10. FINISHED\n**************************"
+  - systemctl status recreationapp.service
